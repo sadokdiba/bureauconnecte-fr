@@ -16,21 +16,41 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Le Bureau Connecté - Solutions de bureau Montréal</title>
-  <meta name="description" content="Services d'assistance bureautique professionnelle et impression à Montréal. Visitez-nous près du métro Saint-Michel." />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Le Bureau Connecté | Impression & Assistance Bureautique à Montréal</title>
+  <meta name="description" content="Le Bureau Connecté propose des services d'impression, de copie, de numérisation et d'assistance bureautique à Montréal. Près du métro Saint-Michel. Service rapide, personnalisé et professionnel." />
+  <meta name="keywords" content="impression, bureau, Montréal, assistance, numérisation, copie, services, impression professionnelle, support informatique" />
+  <meta name="author" content="Le Bureau Connecté" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Le Bureau Connecté | Impression & Assistance Bureautique à Montréal" />
+  <meta property="og:description" content="Services d'impression, de copie, de numérisation et d'assistance bureautique à Montréal. Près du métro Saint-Michel." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.bureauconnecte.com/" />
+  <meta property="og:image" content="./assets/images/logo.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Le Bureau Connecté | Impression & Assistance Bureautique à Montréal" />
+  <meta name="twitter:description" content="Services d'impression, de copie, de numérisation et d'assistance bureautique à Montréal." />
+  <meta name="twitter:image" content="./assets/images/logo.png" />
   <link rel="icon" type="image/png" href="./assets/images/logo.png" />
   <link rel="apple-touch-icon" href="./assets/images/logo.png" />
+  <link rel="manifest" href="/manifest.json" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="./assets/css/styles.css" />
-  <meta name="author" content="Le Bureau Connecté" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 <body>
-  <header class="header">
+  <header class="header" role="banner">
     <nav class="navbar container" role="navigation" aria-label="Navigation principale">
-      <a href="#home" class="logo" aria-label="Accueil Le Bureau Connecté">
-        <img src="./assets/images/logo.png" alt="Le Bureau Connecté Logo" class="logo-image" />
+      <a href="#home" class="logo" aria-label="Accueil">
+        <img src="./assets/images/logo.png" alt="Logo du service, impression et bureau à Montréal" class="logo-image" />
         <span class="logo-text">
           <span class="logo-line1">LE BUREAU</span>
           <span class="logo-line2">CONNECTÉ</span>
@@ -42,169 +62,168 @@
         <span class="sr-only">Menu</span>
       </button>
 
-      <ul id="primary-menu" class="nav-menu">
-        <li><a href="#home" class="nav-link">Accueil</a></li>
-        <li><a href="#services" class="nav-link">Services</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-        <li><a href="pages/about.html" class="nav-link">À propos</a></li>
+      <ul id="primary-menu" class="nav-menu" role="menubar">
+        <li role="none"><a href="#home" class="nav-link" role="menuitem">Accueil</a></li>
+        <li role="none"><a href="#services" class="nav-link" role="menuitem">Services</a></li>
+        <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+        <li role="none"><a href="pages/about.html" class="nav-link" role="menuitem">À propos</a></li>
       </ul>
     </nav>
   </header>
-  <section id="home" class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <h1>LE BUREAU CONNECTÉ</h1>
-        <p class="hero-subtitle">Assistance bureautique personnalisée</p>
-        <p class="hero-description">
-          Solutions bureautiques professionnelles et services d'impression à Montréal. Nous offrons une assistance personnalisée pour tous vos besoins de bureau.
-        </p>
+  <main id="main-content">
+    <section class="hero" aria-labelledby="main-title">
+      <span id="home"></span>
+      <div class="container">
+        <div class="hero-content">
+            <h1 id="main-title">Solutions bureautiques à Montréal</h1>
+          <p class="hero-subtitle">Assistance bureautique personnalisée</p>
+            <p class="hero-description">
+              Assistance professionnelle, impression, copie, numérisation et support informatique personnalisés à Montréal.
+            </p>
 
-        <div class="hero-actions">
-          <a href="tel:5145824850" class="btn btn-primary" aria-label="Appelez-nous 514-582-4850">
-            <i class="fas fa-phone" aria-hidden="true"></i>
-            <span>Appelez-nous: 514-582-4850</span>
-          </a>
+          <div class="hero-actions">
+            <a href="tel:5145824850" class="btn btn-primary" aria-label="Appelez-nous 514-582-4850">
+              <i class="fas fa-phone" aria-hidden="true"></i>
+              <span>514-582-4850</span>
+            </a>
 
-          <a href="https://wa.me/15145824850" class="btn btn-outline whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contactez-nous sur WhatsApp">
-            <i class="fab fa-whatsapp" aria-hidden="true"></i>
-            <span>WhatsApp</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="services" class="services-preview">
-    <div class="container">
-      <h2 class="section-title">Nos Services</h2>
-      <p class="section-subtitle">Solutions bureautiques professionnelles adaptées à vos besoins</p>
-
-      <div class="services-grid">
-        <article class="service-card" aria-labelledby="svc-printing">
-          <div class="service-icon"><i class="fas fa-print" aria-hidden="true"></i></div>
-          <h3 id="svc-printing">Services d'impression</h3>
-          <p>Solutions d'impression de haute qualité pour documents, cartes d'affaires, dépliants et plus.</p>
-        </article>
-
-        <article class="service-card" aria-labelledby="svc-copy-scan">
-          <div class="service-icon"><i class="fas fa-copy" aria-hidden="true"></i></div>
-          <h3 id="svc-copy-scan">Copie et numérisation</h3>
-          <p>Services de copie et de numérisation rapides et fiables pour tous vos besoins documentaires.</p>
-        </article>
-
-        <article class="service-card" aria-labelledby="svc-assistance">
-          <div class="service-icon"><i class="fas fa-laptop" aria-hidden="true"></i></div>
-          <h3 id="svc-assistance">Assistance bureautique</h3>
-          <p>Aide personnalisée pour les tâches bureautiques, le formatage de documents et le support informatique.</p>
-        </article>
-
-        <article class="service-card" aria-labelledby="svc-docs">
-          <div class="service-icon"><i class="fas fa-file-alt" aria-hidden="true"></i></div>
-          <h3 id="svc-docs">Services documentaires</h3>
-          <p>Services professionnels de préparation, d'édition et de formatage de documents.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact-section">
-    <div class="container">
-      <div class="contact-content">
-        <div class="contact-info">
-          <h2>Contactez-nous</h2>
-          <p class="hero-description">Prêt à vous aider avec vos besoins de bureau. Contactez-nous aujourd'hui pour un service personnalisé.</p>
-          
-          <div class="contact-details">
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
-              <div class="contact-text">
-                <h4>Adresse</h4>
-                <p>7591 Bd Saint-Michel, Montréal, QC H2A 3A4</p>
-                <p><em>Près du métro Saint-Michel</em></p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
-              <div class="contact-text">
-                <h4>Téléphone</h4>
-                <p><a href="tel:5145824850">514-582-4850</a></p>
-                <p><em>Appels et WhatsApp</em></p>
-              </div>
-            </div>
-
-            <div class="contact-item">
-              <div class="contact-icon"><i class="fas fa-subway" aria-hidden="true"></i></div>
-              <div class="contact-text">
-                <h4>Accès métro</h4>
-                <p>Station Saint-Michel</p>
-                <p><em>Accès facile en transport en commun</em></p>
-              </div>
-            </div>
-            
-            <a href="https://wa.me/15145824850" class="btn btn-primary whatsapp-btn" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/15145824850" class="btn btn-outline whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Contactez-nous sur WhatsApp">
               <i class="fab fa-whatsapp" aria-hidden="true"></i>
-              <span>Contactez via WhatsApp</span>
+              <span>WhatsApp</span>
             </a>
           </div>
         </div>
-        
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11173.875090944817!2d-73.60310888539853!3d45.56101100907043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91ecb126f3929%3A0x75d6de3b5241a9a2!2s7591%20Bd%20Saint-Michel%2C%20Montr%C3%A9al%2C%20QC%20H2A%203A4!5e0!3m2!1sfr!2sca!4v1761067677950!5m2!1sfr!2sca"
-            width="100%"
-            height="350"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Carte — 7591 Bd Saint-Michel, Montréal"
-          ></iframe>
-        </div>
       </div>
-    </div>
-  </section>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-section">
-          <div class="footer-logo">
-            <img src="./assets/images/logo.png" alt="Le Bureau Connecté Logo" class="logo-image" />
-            <span class="logo-text">LE BUREAU CONNECTÉ</span>
-          </div>
-          <p class="footer-description">Votre partenaire de confiance pour tous vos besoins de bureau à Montréal.</p>
-        </div>
-        
-        <div class="footer-section">
-          <h4>Nos Services</h4>
-          <ul class="footer-links">
-            <li><a href="#services">Impression</a></li>
-            <li><a href="#services">Copie & Numérisation</a></li>
-            <li><a href="#services">Assistance Bureautique</a></li>
-            <li><a href="#services">Services Documentaires</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-section">
-          <h4>Contact</h4>
-          <div class="footer-contact-info">
-            <p><i class="fas fa-map-marker-alt"></i> 7591 ST MICHEL, MONTRÉAL, H2A 3A4</p>
-            <p><i class="fas fa-phone"></i> <a href="tel:5145824850">514-582-4850</a></p>
-            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/15145824850" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
-            <p><i class="fas fa-subway"></i> Métro Saint-Michel</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>© 2024 Le Bureau Connecté. Tous droits réservés.</p>
-      </div>
-    </div>
-  </footer>
+    </section>
+    <section class="services-preview" aria-labelledby="services-title">
+      <span id="services"></span>
+      <div class="container">
+        <h2 class="section-title" id="services-title">Nos Services</h2>
+        <p class="section-subtitle">Solutions bureautiques professionnelles adaptées à vos besoins</p>
 
-  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
-    <i class="fas fa-chevron-up"></i>
-  </button>
+        <div class="services-grid">
+          <article class="service-card" aria-labelledby="svc-printing">
+            <div class="service-icon"><i class="fas fa-print" aria-hidden="true"></i></div>
+            <h3 id="svc-printing">Services d'impression</h3>
+            <p>Solutions d'impression de haute qualité pour documents, cartes d'affaires, dépliants et plus.</p>
+          </article>
 
-  <script src="./assets/js/script.js"></script>
+          <article class="service-card" aria-labelledby="svc-copy-scan">
+            <div class="service-icon"><i class="fas fa-copy" aria-hidden="true"></i></div>
+            <h3 id="svc-copy-scan">Copie et numérisation</h3>
+            <p>Services de copie et de numérisation rapides et fiables pour tous vos besoins documentaires.</p>
+          </article>
+
+          <article class="service-card" aria-labelledby="svc-assistance">
+            <div class="service-icon"><i class="fas fa-laptop" aria-hidden="true"></i></div>
+            <h3 id="svc-assistance">Assistance bureautique</h3>
+            <p>Aide personnalisée pour les tâches bureautiques, le formatage de documents et le support informatique.</p>
+          </article>
+
+          <article class="service-card" aria-labelledby="svc-docs">
+            <div class="service-icon"><i class="fas fa-file-alt" aria-hidden="true"></i></div>
+            <h3 id="svc-docs">Services documentaires</h3>
+            <p>Services professionnels de préparation, d'édition et de formatage de documents.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" aria-labelledby="contact-title">
+      <span id="contact"></span>
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2 id="contact-title">Contactez-nous</h2>
+            <p class="hero-description">Prêt à vous aider avec vos besoins de bureau. Contactez-nous aujourd'hui pour un service personnalisé.</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i></div>
+                <div class="contact-text">
+                  <h4>Adresse</h4>
+                  <address>
+                    <p>7591 Bd Saint-Michel, Montréal, QC H2A 3A4</p>
+                    <p><em>Près du métro Saint-Michel</em></p>
+                  </address>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+                <div class="contact-text">
+                  <h4>Téléphone</h4>
+                  <p><a href="tel:5145824850">514-582-4850</a></p>
+                  <p><em>Appels et WhatsApp</em></p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-subway" aria-hidden="true"></i></div>
+                <div class="contact-text">
+                  <h4>Accès métro</h4>
+                  <p>Station Saint-Michel</p>
+                  <p><em>Accès facile en transport en commun</em></p>
+                </div>
+              </div>
+              <a href="https://wa.me/15145824850" class="btn btn-primary whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                <span>Contactez via WhatsApp</span>
+              </a>
+            </div>
+          </div>
+          <div class="map-container" aria-label="Carte de localisation du bureau">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11173.875090944817!2d-73.60310888539853!3d45.56101100907043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91ecb126f3929%3A0x75d6de3b5241a9a2!2s7591%20Bd%20Saint-Michel%2C%20Montr%C3%A9al%2C%20QC%20H2A%203A4!5e0!3m2!1sfr!2sca!4v1761067677950!5m2!1sfr!2sca"
+              width="100%"
+              height="350"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Carte — 7591 Bd Saint-Michel, Montréal"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img src="./assets/images/logo.png" alt="Logo bureau connecté Montréal" class="logo-image" />
+              <span class="logo-text">BUREAU CONNECTÉ</span>
+            </div>
+            <p class="footer-description">Votre partenaire de confiance pour vos besoins de bureau à Montréal.</p>
+          </div>
+          <div class="footer-section">
+            <h4>Nos Services</h4>
+            <ul class="footer-links">
+              <li><a href="#services">Impression</a></li>
+              <li><a href="#services">Copie & Numérisation</a></li>
+              <li><a href="#services">Assistance Bureautique</a></li>
+              <li><a href="#services">Services Documentaires</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <div class="footer-contact-info">
+              <p><i class="fas fa-map-marker-alt"></i> 7591 ST MICHEL, MONTRÉAL, H2A 3A4</p>
+              <p><i class="fas fa-phone"></i> <a href="tel:5145824850">514-582-4850</a></p>
+              <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/15145824850" target="_blank" rel="noopener noreferrer">WhatsApp</a></p>
+              <p><i class="fas fa-subway"></i> Métro Saint-Michel</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 Le Bureau Connecté. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="./assets/js/script.js"></script>
+  </main>
 </body>
 </html>

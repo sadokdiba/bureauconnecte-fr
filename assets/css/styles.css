@@ -1,16 +1,24 @@
-/*!
-    Le Bureau Connecté - Styles
-    Copyright (c) 2024 Le Bureau Connecté. All rights reserved.
-    
-    This HTML document and its content are proprietary and confidential.
-    Unauthorized copying, distribution, modification, public display, or 
-    public performance of this content, in whole or in part, is strictly 
-    prohibited without the prior written consent of Le Bureau Connecté.
-    
-    For licensing inquiries, contact: sadokdiba@icloud.com
-    
-    UNAUTHORIZED USE IS PROHIBITED AND MAY RESULT IN LEGAL ACTION.
- */
+/* Hide mobile burger icon on desktop */
+.mobile-toggle {
+    display: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* Anchor target offset for fixed header */
+#home,
+#services,
+#contact,
+#main-content,
+#about-content,
+#values-section,
+#why-choose,
+#cta-section,
+#coming-soon {
+    scroll-margin-top: 90px;
+}
+
 
 :root {
     --green: #4a7c59;
@@ -24,11 +32,36 @@
     --shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-/* Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: 10000;
+    background: var(--green);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: 0 0 8px 8px;
+    font-weight: bold;
+    transition: left 0.3s, box-shadow 0.3s;
+}
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    width: auto;
+    height: auto;
+    outline: 3px solid var(--light-green);
+    box-shadow: 0 4px 15px rgba(74, 124, 89, 0.3);
 }
 
 body {
@@ -46,6 +79,13 @@ img {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+a:focus, button:focus, .btn:focus, input:focus, textarea:focus, select:focus {
+    outline: 2px solid var(--green);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px var(--light-green);
+    z-index: 10;
 }
 
 .container {
@@ -68,7 +108,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 24px;
     padding: 15px 0;
+    position: relative;
 }
 
 .logo {
@@ -77,6 +119,7 @@ a {
     gap: 10px;
     font-weight: bold;
     color: var(--green);
+    justify-content: center;
 }
 
 .logo-image {
@@ -107,37 +150,61 @@ a {
     color: var(--light-green);
 }
 
-.mobile-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 20px;
-    color: var(--green);
-    cursor: pointer;
-}
 
-/* Mobile Navigation */
+
 @media (max-width: 768px) {
     .mobile-toggle {
         display: block;
+        background: none;
+        border: none;
+        font-size: 22px;
+        color: var(--green);
+        cursor: pointer;
+        padding: 10px 18px 10px 10px;
+        margin-right: 8px;
+        border-radius: 8px;
+        transition: background 0.2s;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1100;
     }
-    
+    .mobile-toggle:focus, .mobile-toggle:hover {
+        background: var(--light-gray);
+    }
+    .navbar {
+        flex-direction: row;
+        justify-content: center;
+        gap: 0;
+    }
+    .logo {
+        flex: 1 1 auto;
+        justify-content: center;
+    }
     .nav-menu {
         display: none;
         position: absolute;
         top: 100%;
         left: 0;
-        width: 100%;
+        width: 100vw;
         background: var(--white);
         flex-direction: column;
         padding: 20px;
         box-shadow: var(--shadow);
+        align-items: center;
     }
-    
     .nav-menu.active {
         display: flex;
     }
+    .footer-contact-info {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
+
 
 /* Hero Section */
 .hero {

@@ -15,43 +15,65 @@
 -->
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos - Le Bureau Connecté</title>
-    <meta name="description" content="Découvrez Le Bureau Connecté - votre partenaire de confiance pour des solutions bureautiques à Montréal près du métro Saint-Michel.">
-    <link rel="icon" type="image/png" href="../assets/images/logo.png">
-    <link rel="apple-touch-icon" href="../assets/images/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="../assets/css/styles.css">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>À propos | Le Bureau Connecté - Solutions bureautiques à Montréal</title>
+        <meta name="description" content="Découvrez Le Bureau Connecté, votre partenaire de confiance pour l'impression, la copie, la numérisation et l'assistance bureautique à Montréal, près du métro Saint-Michel.">
+        <meta name="keywords" content="impression, bureau, Montréal, assistance, numérisation, copie, services, impression professionnelle, support informatique">
+        <meta name="author" content="Le Bureau Connecté">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="À propos | Le Bureau Connecté - Solutions bureautiques à Montréal" />
+        <meta property="og:description" content="Découvrez Le Bureau Connecté, votre partenaire de confiance pour l'impression, la copie, la numérisation et l'assistance bureautique à Montréal." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.bureauconnecte.com/pages/about.html" />
+        <meta property="og:image" content="../assets/images/logo.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="À propos | Le Bureau Connecté - Solutions bureautiques à Montréal" />
+        <meta name="twitter:description" content="Découvrez Le Bureau Connecté, votre partenaire de confiance pour l'impression, la copie, la numérisation et l'assistance bureautique à Montréal." />
+        <meta name="twitter:image" content="../assets/images/logo.png" />
+        <link rel="icon" type="image/png" href="../assets/images/logo.png">
+        <link rel="apple-touch-icon" href="../assets/images/logo.png">
+        <link rel="manifest" href="/manifest.json" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+        <link rel="stylesheet" href="../assets/css/styles.css">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-XXXXXXXXXX');
+        </script>
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar container">
-            <a href="../index.html" class="logo">
-                <img src="../assets/images/logo.png" alt="Le Bureau Connecté Logo" class="logo-image">
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <header class="header" role="banner">
+        <nav class="navbar container" role="navigation" aria-label="Navigation principale">
+            <a href="../index.html" class="logo" aria-label="Accueil Le Bureau Connecté">
+                <img src="../assets/images/logo.png" alt="Logo Le Bureau Connecté, impression et services de bureau à Montréal" class="logo-image">
                 <span class="logo-text">
                     <span class="logo-line1">LE BUREAU</span>
-                    <span class="logo-line2">CONNECTÉE</span>
+                    <span class="logo-line2">CONNECTÉ</span>
                 </span>
             </a>
-            
-            <ul class="nav-menu">
-                <li><a href="../index.html#home" class="nav-link">Accueil</a></li>
-                <li><a href="../index.html#services" class="nav-link">Services</a></li>
-                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
-                <li><a href="about.html" class="nav-link">À propos</a></li>
-            </ul>
-            
-            <button class="mobile-toggle">
-                <i class="fas fa-bars"></i>
+            <button class="mobile-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+                <span class="sr-only">Menu</span>
             </button>
+            <ul id="primary-menu" class="nav-menu" role="menubar">
+                <li role="none"><a href="../index.html#home" class="nav-link" role="menuitem">Accueil</a></li>
+                <li role="none"><a href="../index.html#services" class="nav-link" role="menuitem">Services</a></li>
+                <li role="none"><a href="../index.html#contact" class="nav-link" role="menuitem">Contact</a></li>
+                <li role="none"><a href="about.html" class="nav-link" role="menuitem" aria-current="page">À propos</a></li>
+            </ul>
         </nav>
     </header>
+    <main id="main-content">
 
-    <section class="page-header">
+    <section class="page-header" aria-labelledby="about-title">
         <div class="container">
-            <h1>À propos de Bureau Connecté</h1>
+            <h1 id="about-title">À propos de Bureau Connecté</h1>
             <p>Votre partenaire de confiance pour des solutions bureautiques professionnelles à Montréal</p>
         </div>
     </section>
@@ -62,19 +84,16 @@
                 <div class="about-text">
                     <h2>Qui nous sommes</h2>
                     <p>Bureau Connecté est votre destination de référence pour des solutions bureautiques complètes au cœur de Montréal. Nous nous spécialisons dans l'assistance personnalisée pour tous vos besoins de bureau, de l'impression et de la copie à la préparation de documents et au support informatique.</p>
-                    
                     <p>Situés commodément près de la station de métro Saint-Michel, nous servons les particuliers, les entreprises et les étudiants avec des services fiables et professionnels. Notre équipe bilingue s'engage à fournir des résultats de qualité avec une touche personnelle.</p>
-                    
                     <div class="about-highlight">
                         <h3>Notre Mission</h3>
                         <p>"Fournir des solutions bureautiques accessibles et professionnelles qui aident notre communauté à réussir dans leurs efforts personnels et professionnels."</p>
                     </div>
                 </div>
-                
                 <div class="about-image">
-                    <a href="https://www.google.com/maps/place/7591+Bd+Saint-Michel,+Montr%C3%A9al,+QC+H2A+3A4" target="_blank" class="location-link">
+                    <a href="https://www.google.com/maps/place/7591+Bd+Saint-Michel,+Montr%C3%A9al,+QC+H2A+3A4" target="_blank" class="location-link" aria-label="Voir notre emplacement sur Google Maps">
                         <div class="image-placeholder">
-                            <i class="fas fa-map-marker-alt"></i>
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                             <p><strong>Notre emplacement</strong><br><span>7591 ST MICHEL, MONTREAL, H2A 3A4</span><br><em>Près du métro Saint-Michel</em><br><small>Cliquez pour voir sur Google Maps</small></p>
                         </div>
                     </a>
@@ -83,39 +102,35 @@
         </div>
     </section>
 
-    <section class="values-section">
+    <section class="values-section" aria-labelledby="values-title">
         <div class="container">
-            <h2 class="section-title">Nos Valeurs</h2>
+            <h2 class="section-title" id="values-title">Nos Valeurs</h2>
             <p class="section-subtitle">Ce qui nous motive à fournir un service exceptionnel</p>
-            
             <div class="values-grid">
                 <div class="value-card">
                     <div class="value-icon">
-                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-heart" aria-hidden="true"></i>
                     </div>
                     <h3>Service personnalisé</h3>
                     <p>Nous croyons en l'établissement de relations et en l'attention individualisée pour chaque client.</p>
                 </div>
-                
                 <div class="value-card">
                     <div class="value-icon">
-                        <i class="fas fa-award"></i>
+                        <i class="fas fa-award" aria-hidden="true"></i>
                     </div>
                     <h3>Qualité d'abord</h3>
                     <p>Chaque projet reçoit toute notre attention pour assurer les résultats de la plus haute qualité.</p>
                 </div>
-                
                 <div class="value-card">
                     <div class="value-icon">
-                        <i class="fas fa-clock"></i>
+                        <i class="fas fa-clock" aria-hidden="true"></i>
                     </div>
                     <h3>Fiabilité</h3>
                     <p>Vous pouvez compter sur nous pour fournir un service cohérent et fiable à chaque fois.</p>
                 </div>
-                
                 <div class="value-card">
                     <div class="value-icon">
-                        <i class="fas fa-users"></i>
+                        <i class="fas fa-users" aria-hidden="true"></i>
                     </div>
                     <h3>Focus communautaire</h3>
                     <p>Nous sommes fiers de servir la communauté montréalaise et de soutenir le succès local.</p>
@@ -124,55 +139,49 @@
         </div>
     </section>
 
-    <section class="why-choose">
+    <section class="why-choose" aria-labelledby="why-title">
         <div class="container">
-            <h2 class="section-title">Pourquoi choisir Bureau Connecté?</h2>
+            <h2 class="section-title" id="why-title">Pourquoi choisir Bureau Connecté?</h2>
             <p class="section-subtitle">Découvrez ce qui nous rend différents</p>
-            
             <div class="features-grid">
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                     </div>
                     <h3>Emplacement pratique</h3>
                     <p>Situé près du métro Saint-Michel pour un accès facile de partout à Montréal.</p>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-language"></i>
+                        <i class="fas fa-language" aria-hidden="true"></i>
                     </div>
                     <h3>Service bilingue</h3>
                     <p>Service professionnel en anglais et en français pour servir la communauté diversifiée de Montréal.</p>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
                     </div>
                     <h3>WhatsApp disponible</h3>
                     <p>Contactez-nous facilement via WhatsApp pour des questions rapides et des demandes de service.</p>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-tools"></i>
+                        <i class="fas fa-tools" aria-hidden="true"></i>
                     </div>
                     <h3>Solutions complètes</h3>
                     <p>De l'impression simple à la préparation de documents complexes, nous nous occupons de tout.</p>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-dollar-sign"></i>
+                        <i class="fas fa-dollar-sign" aria-hidden="true"></i>
                     </div>
                     <h3>Prix abordables</h3>
                     <p>Tarifs compétitifs sans compromettre la qualité ou le service.</p>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-handshake"></i>
+                        <i class="fas fa-handshake" aria-hidden="true"></i>
                     </div>
                     <h3>Touche personnelle</h3>
                     <p>Nous connaissons nos clients par leur nom et adaptons nos services à leurs besoins spécifiques.</p>
@@ -181,46 +190,45 @@
         </div>
     </section>
 
-    <section class="cta-section">
+    <section class="cta-section" aria-labelledby="cta-title">
         <div class="container">
-            <h2>Prêt à commencer?</h2>
+            <h2 id="cta-title">Prêt à commencer?</h2>
             <p>Contactez-nous aujourd'hui pour tous vos besoins de bureau</p>
-            
             <div class="cta-buttons">
                 <a href="#contact" class="btn btn-white">
-                    <i class="fas fa-info-circle"></i>
+                    <i class="fas fa-info-circle" aria-hidden="true"></i>
                     <span>Voir nos coordonnées</span>
                 </a>
                 <a href="https://wa.me/15145824850" class="btn btn-outline-white whatsapp-btn" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
                     <span>WhatsApp direct</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section" aria-labelledby="contact-title">
         <div class="container">
             <div class="contact-content">
                 <div class="contact-info">
-                    <h2>Contactez-nous</h2>
+                    <h2 id="contact-title">Contactez-nous</h2>
                     <p class="hero-description">Prêt à vous aider avec vos besoins de bureau. Contactez-nous aujourd'hui pour un service personnalisé.</p>
-                    
                     <div class="contact-details">
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <i class="fas fa-map-marker-alt"></i>
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                             </div>
                             <div class="contact-text">
                                 <h4>Adresse</h4>
-                                <p>7591 ST MICHEL, MONTREAL, H2A 3A4</p>
-                                <p><em>Près du métro Saint-Michel</em></p>
+                                <address>
+                                    <p>7591 ST MICHEL, MONTREAL, H2A 3A4</p>
+                                    <p><em>Près du métro Saint-Michel</em></p>
+                                </address>
                             </div>
                         </div>
-                        
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <i class="fas fa-phone"></i>
+                                <i class="fas fa-phone" aria-hidden="true"></i>
                             </div>
                             <div class="contact-text">
                                 <h4>Téléphone</h4>
@@ -228,10 +236,9 @@
                                 <p><em>Appels et WhatsApp</em></p>
                             </div>
                         </div>
-                        
                         <div class="contact-item">
                             <div class="contact-icon">
-                                <i class="fas fa-subway"></i>
+                                <i class="fas fa-subway" aria-hidden="true"></i>
                             </div>
                             <div class="contact-text">
                                 <h4>Accès métro</h4>
@@ -239,66 +246,60 @@
                                 <p><em>Accès facile en transport en commun</em></p>
                             </div>
                         </div>
-                        
-                        <a href="https://wa.me/15145824850" class="btn btn-primary whatsapp-btn" target="_blank">
-                            <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/15145824850" class="btn btn-primary whatsapp-btn" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
                             <span>Contactez via WhatsApp</span>
                         </a>
                     </div>
                 </div>
-                
-                <div class="map-container">
+                <div class="map-container" aria-label="Carte de localisation du bureau">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11173.875090944817!2d-73.60310888539853!3d45.56101100907043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91ecb126f3929%3A0x75d6de3b5241a9a2!2s7591%20Bd%20Saint-Michel%2C%20Montr%C3%A9al%2C%20QC%20H2A%203A4!5e0!3m2!1sfr!2sca!4v1761067677950!5m2!1sfr!2sca" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Carte — 7591 Bd Saint-Michel, Montréal">
                     </iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="coming-soon">
+    <section class="coming-soon" aria-labelledby="coming-title">
         <div class="container">
-            <h2 class="section-title">Bientôt disponible</h2>
+            <h2 class="section-title" id="coming-title">Bientôt disponible</h2>
             <p class="section-subtitle">Nouveaux services passionnants que nous développons pour vous</p>
-            
             <div class="values-grid">
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
+                        <i class="fas fa-laptop-code" aria-hidden="true"></i>
                     </div>
                     <h3>Services informatiques</h3>
                     <p>Réparation d'ordinateurs, aide à l'installation et services de support technique.</p>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-id-card"></i>
+                        <i class="fas fa-id-card" aria-hidden="true"></i>
                     </div>
                     <h3>Services de plastification</h3>
                     <p>Protection et durabilité pour vos documents importants, cartes et certificats.</p>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
                     </div>
                     <h3>Services postaux</h3>
                     <p>Envoi de courrier, colis et services de messagerie pour vos besoins professionnels.</p>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-stamp"></i>
+                        <i class="fas fa-stamp" aria-hidden="true"></i>
                     </div>
                     <h3>Impression sur mesure</h3>
                     <p>Cartes personnalisées, invitations, bannières et matériel promotionnel unique.</p>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">
-                        <i class="fas fa-desktop"></i>
+                        <i class="fas fa-desktop" aria-hidden="true"></i>
                     </div>
                     <h3>Formation bureautique</h3>
                     <p>Cours personnalisés sur Word, Excel, PowerPoint et autres logiciels de bureau.</p>
@@ -306,17 +307,16 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <div class="footer-logo">
-                        <img src="../assets/images/logo.png" alt="Le Bureau Connecté Logo" class="logo-image">
+                        <img src="../assets/images/logo.png" alt="Logo Le Bureau Connecté, impression et services de bureau à Montréal" class="logo-image">
                         <span class="logo-text">LE BUREAU CONNECTÉ</span>
                     </div>
                     <p class="footer-description">Votre partenaire de confiance pour tous vos besoins de bureau à Montréal.</p>
                 </div>
-                
                 <div class="footer-section">
                     <h4>Nos Services</h4>
                     <ul class="footer-links">
@@ -326,7 +326,6 @@
                         <li><a href="../index.html#services">Services Documentaires</a></li>
                     </ul>
                 </div>
-                
                 <div class="footer-section">
                     <h4>Contact</h4>
                     <div class="footer-contact-info">
@@ -337,16 +336,15 @@
                     </div>
                 </div>
             </div>
-            
             <div class="footer-bottom">
                 <p>© 2024 Le Bureau Connecté. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
     <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
-        <i class="fas fa-chevron-up"></i>
+        <i class="fas fa-chevron-up" aria-hidden="true"></i>
     </button>
-
     <script src="../assets/js/script.js"></script>
+    </main>
 </body>
 </html>

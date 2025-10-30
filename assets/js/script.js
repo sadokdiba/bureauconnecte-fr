@@ -18,32 +18,56 @@ function initializeNavigation() {
 
     if (mobileToggle && navMenu) {
         mobileToggle.addEventListener('click', function() {
-            navMenu.classList.toggle('active');
-            
-            if (navMenu.classList.contains('active')) {
-                mobileToggle.innerHTML = '<i class="fas fa-times"></i>';
+            const expanded = navMenu.classList.toggle('active');
+            mobileToggle.setAttribute('aria-expanded', expanded);
+            if (expanded) {
+                mobileToggle.innerHTML = '<i class="fas fa-times" aria-hidden="true"></i><span class="sr-only">Fermer le menu</span>';
+                // Focus first nav link for accessibility
+                const firstLink = navMenu.querySelector('.nav-link');
+                if (firstLink) firstLink.focus();
             } else {
-                mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                mobileToggle.innerHTML = '<i class="fas fa-bars" aria-hidden="true"></i><span class="sr-only">Menu</span>';
+                mobileToggle.focus();
             }
         });
-        
+
         navMenu.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', function() {
                 navMenu.classList.remove('active');
-                mobileToggle.innerHTML = '<i class="fas fa-bars"></i>';
+                mobileToggle.innerHTML = '<i class="fas fa-bars" aria-hidden="true"></i><span class="sr-only">Menu</span>';
+                mobileToggle.setAttribute('aria-expanded', false);
+                mobileToggle.focus();
             });
         });
     }
 
+    // Smooth scroll for anchor links, support skip-link
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+            const href = this.getAttribute('href');
+            if (href === '#main-content') {
+                // Skip-link: focus main content
+                const main = document.getElementById('main-content');
+                if (main) {
+                    main.setAttribute('tabindex', '-1');
+                    main.focus();
+                    setTimeout(() => main.removeAttribute('tabindex'), 1000);
+                }
+                return;
+            }
+            // Only smooth scroll for in-page anchors
+            if (href && href.startsWith('#')) {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    target.setAttribute('tabindex', '-1');
+                    target.focus();
+                    setTimeout(() => target.removeAttribute('tabindex'), 1000);
+                }
             }
         });
     });
