@@ -104,7 +104,7 @@ function initializeBackToTop() {
             window.scrollTo({
                 top: 0,
                 behavior: 'smooth'
-            });
+            })
         });
     }
 }
@@ -112,4 +112,6 @@ function initializeBackToTop() {
 document.addEventListener('DOMContentLoaded', function() {
     initializeNavigation();
     initializeBackToTop();
+    var yearSpan = document.getElementById('currentYear');
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 });
